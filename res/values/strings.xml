@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text"></string>
+    <string name="app_name">ComTech WiFi Tester</string>
+    <string name="button_name">TEST</string>
+    <string name="wifi_name_true">WiFi is enabled.</string>
+    <string name="wifi_name_false">WiFi is not enabled... Device is scanning for a connection...</string>
+    <string name="wifi_scan_failed">WiFi scan failed to initiate.</string>
+</resources>

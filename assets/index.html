@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ComTech WiFi Tester</title>
+<input type="button" value="LINK" onClick="showAndroidToastAndRedirect('Redirecting...')" />
+<input type="button" value="Scan For Connections" onClick="showAndroidWiFiConnections('Typing WiFi Connections...')" />
+<script type"text/javascript">
+	
+		function showAndroidWiFiConnections(toast){
+			
+			var jsonobj = eval(Android.showWiFiConnections(toast));
+			var x = document.getElementById("display");
+			x.innerHTML = jsonobj;
+			
+		
+			
+		} 
+		function showAndroidToastAndRedirect(toast) {
+				Android.showToastAndRedirect(toast);
+		}
+
+		
+</script>
+
+<body>
+<script type"text/javascript">
+<!--document.write(showAndroidWiFiConnections('ffff'));-->		
+</script></p>
+<div id="display"></div>
+
+</body>
+</html>
